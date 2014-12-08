@@ -11,14 +11,20 @@
     ],
     "require": {
         "php": ">=5.3.3",
+        "illuminate/database": "~4.0",
         "illuminate/support": "~4.0",
         "antarctica/laravel-base-exceptions": "dev-develop",
+        "antarctica/laravel-base-repositories": "dev-develop",
         "tymon/jwt-auth": "0.3.*"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-exceptions.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-repositories.git"
         }
     ],
     "autoload": {
