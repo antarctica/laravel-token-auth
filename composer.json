@@ -1,0 +1,29 @@
+{
+    "name": "antarctica/laravel-token-auth",
+    "description": "Enables use of API tokens as a form of stateless authentication within Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Felix Fennell",
+            "email": "felnne@bas.ac.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "illuminate/support": "~4.0",
+        "antarctica/laravel-base-exceptions": "dev-develop",
+        "tymon/jwt-auth": "0.3.*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-exceptions.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Antarctica\\LaravelTokenAuth\\": "src"
+        }
+    }
+}
