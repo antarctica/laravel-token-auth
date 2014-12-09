@@ -7,8 +7,7 @@ use Antarctica\LaravelTokenAuth\Service\Token\TokenServiceInterface;
 use Carbon;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Antarctica\LaravelTokenAuth\Exception\Token\UnknownSubjectTokenException;
-
-use Lions\Repository\TokenBlacklist\TokenBlacklistRepositoryInterface;  // TODO: Circular dependency (!)
+use Antarctica\LaravelTokenBlacklist\Repository\TokenBlacklistRepositoryInterface;
 
 class TokenUserService implements TokenUserServiceInterface {
 
