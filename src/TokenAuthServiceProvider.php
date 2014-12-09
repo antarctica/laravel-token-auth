@@ -4,7 +4,7 @@ namespace Antarctica\LaravelTokenAuth;
 
 use Illuminate\Support\ServiceProvider;
 
-class ServiceServiceProvider extends ServiceProvider {
+class TokenAuthServiceProvider extends ServiceProvider {
 
     public function register()
     {
