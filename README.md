@@ -46,3 +46,29 @@ To publish the config file run:
     php artisan config:publish antarctica/laravel-token-auth
     
 Then edit the `user_repository` key.
+
+## Usage
+
+To support both standard session based and token based authentication this package provides an `auth.combined`
+filter. To enable this filter add the following to your `app/filters.php` file:
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Authentication Filters
+    |--------------------------------------------------------------------------
+    |
+    | The "combined" filter is a custom filter which allows session and token
+    | based authentication to be combined. This means a user can be authenticated
+    | using either an active session (i.e. being logged in) or by providing a
+    | token (i.e. using the Authorization header).
+    |
+    */
+
+    Route::filter('auth.combined', 'Antarctica\LaravelTokenAuth\Filter\AuthFilter');
+
+To use the filter on a route:
+
+    Route::get('/secret', array('before' => 'auth.combined', function()
+    {
+        return Response::json(['message' => 'Yay you get to know the secret']);
+    }));
