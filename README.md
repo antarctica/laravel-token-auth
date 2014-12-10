@@ -13,3 +13,12 @@ Require this package in your `composer.json` file:
             "antarctica/laravel-token-auth": "dev-develop"
         }
     }
+This package uses a Repository through which users can be retrieved. There is NO default implementation for this
+repository included in this package. You MUST therefore provide an implementation that implements the provided
+interface through this package's config file.
+
+To publish the config file run:
+
+    php artisan config:publish antarctica/laravel-token-auth
+    
+Then edit the `user_repository` key.
