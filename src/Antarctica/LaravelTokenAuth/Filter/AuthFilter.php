@@ -6,6 +6,7 @@ use Auth;
 use Carbon;
 use Exception;
 use Antarctica\LaravelTokenAuth\Service\TokenUser\TokenUserServiceInterface;
+use Antarctica\LaravelTokenAuth\Exception\Token\MissingTokenException;
 use Redirect;
 use Request;
 use Session;
@@ -58,7 +59,7 @@ class AuthFilter {
 
             // Note: This approach maybe revised in the future.
 
-            if (($this->token_authenticated !== false && $this->token_authenticated !== 'no-token') || Request::wantsJson())
+            if (($this->token_authenticated !== false && $this->token_authenticated instanceof MissingTokenException === false) || Request::wantsJson())
             {
                 $this->tokenAuthenticationFailure();
             }
