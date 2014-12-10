@@ -10,7 +10,7 @@ class BlacklistedTokenException extends TokenException {
 
     protected $details = [
         "token_error" => [
-            "The authentication token has been blacklisted and can no longer be used."
+            "Authentication token has been blacklisted and can no longer be used."
         ]
     ];
 
