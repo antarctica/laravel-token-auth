@@ -2,7 +2,7 @@
 
 namespace Antarctica\LaravelTokenAuth;
 
-use Config;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 

@@ -2,14 +2,14 @@
 
 namespace Antarctica\LaravelTokenAuth\Filter;
 
-use Auth;
 use Carbon;
 use Exception;
 use Antarctica\LaravelTokenAuth\Service\TokenUser\TokenUserServiceInterface;
 use Antarctica\LaravelTokenAuth\Exception\Token\MissingTokenException;
-use Redirect;
-use Request;
-use Session;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Session;
 
 class AuthFilter {
 
