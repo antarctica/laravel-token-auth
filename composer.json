@@ -14,7 +14,8 @@
         "illuminate/support": "~4.0",
         "antarctica/laravel-base-exceptions": "dev-develop",
         "antarctica/laravel-base-repositories": "dev-develop",
-        "tymon/jwt-auth": "0.3.*"
+        "tymon/jwt-auth": "0.3.*",
+        "antarctica/laravel-token-blacklist": "dev-develop"
     },
     "repositories": [
         {
@@ -24,6 +25,10 @@
         {
             "type": "vcs",
             "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-repositories.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-token-blacklist.git"
         }
     ],
     "autoload": {
