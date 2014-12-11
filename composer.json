@@ -10,12 +10,16 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4.0",
         "illuminate/support": "~4.0",
         "antarctica/laravel-base-exceptions": "dev-develop",
         "antarctica/laravel-base-repositories": "dev-develop",
         "tymon/jwt-auth": "0.3.*",
         "antarctica/laravel-token-blacklist": "dev-develop"
+    },
+    "require-dev": {
+        "illuminate/database": "~4.0",
+        "illuminate/http": "~4.0"
     },
     "repositories": [
         {
