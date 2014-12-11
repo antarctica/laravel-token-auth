@@ -3,6 +3,7 @@
 namespace Antarctica\LaravelTokenAuth;
 
 use Config;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class TokenAuthServiceProvider extends ServiceProvider {
@@ -35,6 +36,13 @@ class TokenAuthServiceProvider extends ServiceProvider {
         // Load package config to allow use of values
         Config::package('antarctica/laravel-token-auth', __DIR__.'/../../config');
 
+        // Register package dependencies' service providers and aliases (so the user doesn't have to in app/config/app.php)
+        $loader = AliasLoader::getInstance();
+
+        $this->app->register('Tymon\JWTAuth\JWTAuthServiceProvider');
+        $loader->alias('JWTAuth', 'Tymon\JWTAuth\Facades\JWTAuth');
+
+        // Register package interfaces with their corresponding implementations
         $this->app->bind(
             'Antarctica\LaravelTokenAuth\Service\Token\TokenServiceInterface',
             'Antarctica\LaravelTokenAuth\Service\Token\TokenServiceJwtAuth'
