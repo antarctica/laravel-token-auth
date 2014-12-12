@@ -24,15 +24,15 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-exceptions.git"
+            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-base-exceptions.git"
         },
         {
             "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-base-repositories.git"
+            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-base-repositories.git"
         },
         {
             "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/~felnne/laravel-token-blacklist.git"
+            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-token-blacklist.git"
         }
     ],
     "autoload": {
