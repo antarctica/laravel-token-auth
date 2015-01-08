@@ -72,3 +72,11 @@ To use the filter on a route:
     {
         return Response::json(['message' => 'Yay you get to know the secret']);
     }));
+
+## Contributing
+
+This project welcomes contributions, see `CONTRIBUTING` for our general policy.
+
+## License
+
+Copyright 2015 NERC BAS. Licensed under the MIT license, see `LICENSE` for details.
