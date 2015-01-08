@@ -12,33 +12,18 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "~4.0",
-        "antarctica/laravel-base-exceptions": "dev-develop",
-        "antarctica/laravel-base-repositories": "dev-develop",
+        "antarctica/laravel-base-exceptions": "0.1.*",
+        "antarctica/laravel-base-repositories": "0.1.*",
         "tymon/jwt-auth": "0.3.*",
-        "antarctica/laravel-token-blacklist": "dev-develop"
+        "antarctica/laravel-token-blacklist": "0.1.*"
     },
     "require-dev": {
         "illuminate/database": "~4.0",
         "illuminate/http": "~4.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-base-exceptions.git"
-        },
-        {
-            "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-base-repositories.git"
-        },
-        {
-            "type": "vcs",
-            "url": "ssh://git@stash.ceh.ac.uk:7999/basweb/laravel-token-blacklist.git"
-        }
-    ],
     "autoload": {
         "psr-0": {
             "Antarctica\\LaravelTokenAuth\\": "src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
